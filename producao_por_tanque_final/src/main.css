@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* NBS Colors
+       Dark Petroleum Green: #083A3F (185, 77%, 14%)
+       Medium Teal: #0B5A5F (183, 79%, 21%)
+       Light Teal: #1F6F73 (183, 58%, 29%)
+    */
+    --background: 0 0% 100%;
+    --foreground: 185 77% 14%; /* Using Dark Green for text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 185 77% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 185 77% 14%;
+
+    --primary: 185 77% 14%; /* Dark Petroleum Green #083A3F */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 183 58% 90%; /* Very Light Teal for backgrounds */
+    --secondary-foreground: 183 79% 21%; /* Medium Teal #0B5A5F */
+
+    --muted: 183 20% 96%;
+    --muted-foreground: 183 20% 40%;
+
+    --accent: 183 58% 29%; /* Light Teal #1F6F73 */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 183 20% 90%;
+    --input: 183 20% 90%;
+    --ring: 185 77% 14%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 185 77% 14%;
+    --chart-2: 183 79% 21%;
+    --chart-3: 183 58% 29%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    --sidebar-background: 185 77% 5%; /* Darker than primary */
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 183 58% 29%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 185 77% 14%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 185 77% 14%;
+    --sidebar-ring: 183 58% 29%;
+  }
+
+  .dark {
+    --background: 185 50% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 185 50% 5%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 185 50% 5%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 183 58% 29%; /* Light Teal in dark mode for contrast */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 185 30% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 185 30% 15%;
+    --muted-foreground: 183 20% 65%;
+
+    --accent: 185 30% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 185 30% 15%;
+    --input: 185 30% 15%;
+    --ring: 183 58% 29%;
+
+    --chart-1: 183 58% 29%;
+    --chart-2: 183 79% 40%;
+    --chart-3: 185 77% 50%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    --sidebar-background: 185 50% 4%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 183 58% 29%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 185 30% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 185 30% 15%;
+    --sidebar-ring: 183 58% 29%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

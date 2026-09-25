@@ -1,0 +1,7 @@
+.env
+node_modules
+*.pdf
+*.docx
+*.zip
+playwright-report/
+test-results/

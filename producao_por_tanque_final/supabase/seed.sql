@@ -1,0 +1,4 @@
+-- Intentionally empty.
+-- Add deterministic, non-sensitive local development fixtures here when the
+-- project has an approved seed data set. Keeping this file makes `db reset`
+-- compatible with the enabled seed configuration without copying production data.

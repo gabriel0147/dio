@@ -1,0 +1,1 @@
+ALTER TABLE daily_production_reports ADD COLUMN transfer_observed_density_gcm3 NUMERIC DEFAULT NULL;
